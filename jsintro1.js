@@ -73,52 +73,52 @@ else if (nilai >= 90 && nilai <= 100) {
 }
 
 // 3. Buat segitiga terbalik
-// function printSegitiga(num) {
-//   let hasil = "";
-//   if (isNaN(num)) {
-//     console.log("Input is not Number");
-//   } else {
-//     for (let i = num; i > 0; i--) {
-//       for (let j = 1; j <= i; j++) {
-//         hasil += `${j} `;
-//       }
-//       hasil += "\n";
-//     }
-//   }
-//   return hasil;
-// }
-// console.log(printSegitiga(5));
+function printSegitiga(num) {
+  let hasil = "";
+  if (isNaN(num)) {
+    console.log("Input is not Number");
+  } else {
+    for (let i = num; i > 0; i--) {
+      for (let j = 1; j <= i; j++) {
+        hasil += `${j} `;
+      }
+      hasil += "\n";
+    }
+  }
+  return hasil;
+}
+console.log(printSegitiga(5));
 
 // 4. data
-// let data = {
-//   id: 1,
-//   name: "Leanne Graham",
-//   username: "Bret",
-//   email: "Sincere@april.biz",
-//   address: {
-//     street: "Kulas Light",
-//     suite: "Apt. 556",
-//     city: "Gwenborough",
-//     zipcode: "92998-3874",
-//   },
-//   phone: "1-770-736-8031 x56442",
-//   website: "hildegard.org",
-// };
-// // ubah dengan spread operator
-// const dataNew = {
-//   ...data,
-//   name: "Alamsyah Bimasakti",
-//   username: "Bima",
-//   email: "alamsyahbima22@gmail.com",
-//   hobby: ["travelling", "mendengarkan musik", "olahraga"],
-// };
-// console.log(dataNew);
+let data = {
+  id: 1,
+  name: "Leanne Graham",
+  username: "Bret",
+  email: "Sincere@april.biz",
+  address: {
+    street: "Kulas Light",
+    suite: "Apt. 556",
+    city: "Gwenborough",
+    zipcode: "92998-3874",
+  },
+  phone: "1-770-736-8031 x56442",
+  website: "hildegard.org",
+};
+// ubah dengan spread operator
+const dataNew = {
+  ...data,
+  name: "Alamsyah Bimasakti",
+  username: "Bima",
+  email: "alamsyahbima22@gmail.com",
+  hobby: ["travelling", "mendengarkan musik", "olahraga"],
+};
+console.log(dataNew);
 
-// // ambil data street dan city dengan destructuring
-// const {
-//   address: { street, city },
-// } = data;
-// console.log(`${street}\n${city}`);
+// ambil data street dan city dengan destructuring
+const {
+  address: { street, city },
+} = data;
+console.log(`${street}\n${city}`);
 
-// // tanpa destucturing
-// console.log(`${data.address.street}\n${data.address.city}`);
+// tanpa destucturing
+console.log(`${data.address.street}\n${data.address.city}`);
